@@ -3,7 +3,7 @@
     "title": "LibreOJ",
     "uiVersion": null,
 
-    "cdnRoot": "https://static.cdn.menci.xyz/libreoj-frontend",
+    "cdnRoot": "https://cdn.jsdelivr.net/npm/@lyrio/ui@0.5.8/dist",
 
     "apiEndpoint": "https://api.loj.ac",
     "apiEndpointCN": "https://api.loj.ac.cn",
@@ -11,17 +11,17 @@
     "bootstrapCdnRoot": "bootstrap.loj.ac.cn",
     "bootstrapCdnRootStaging": "bootstrap-staging.loj.ac.cn",
 
-    "assets": "https://static.cdn.menci.xyz/libreoj-assets",
+    "assets": "https://raw.githubusercontent.com/LibreOJ/assets/master",
     "favicon": "${assets}/favicon.ico",
     "appLogo": "${assets}/logo-website.min.svg",
 
     "gravatar": "https://gravatar.com",
-    "gravatarCN": "https://cravatar.cn",
+    "gravatarCN": "https://gravatar.com",
     "ghAvatar": "https://github.com",
-    "ghAvatarCN": "https://cdn.menci.xyz/gh-avatar",
+    "ghAvatarCN": "https://github.com",
 
     "cdnjs": "https://cdnjs.cloudflare.com/ajax/libs",
-    "cdnjsCN": "https://cdnjs.baoshuo.ren/ajax/libs"
+    "cdnjsCN": "https://cdnjs.cloudflare.com/ajax/libs"
   },
   "htmlTemplate": "https://cdn.jsdelivr.net/npm/@lyrio/ui@${uiVersion}/dist/index.html",
   "substitution": {
