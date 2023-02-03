@@ -5,11 +5,11 @@
 
     "cdnRoot": "https://cdn.jsdelivr.net/npm/@lyrio/ui@0.5.8/dist",
 
-    "apiEndpoint": "https://api.loj.ac",
-    "apiEndpointCN": "https://api.loj.ac.cn",
+    "apiEndpoint": "https://api.chenryz.top:8443",
+    "apiEndpointCN": "https://api.chenryz.top:8443",
 
-    "bootstrapCdnRoot": "bootstrap.loj.ac.cn",
-    "bootstrapCdnRootStaging": "bootstrap-staging.loj.ac.cn",
+    "bootstrapCdnRoot": "oj.chenryz.workers.dev",
+    "bootstrapCdnRootStaging": "st-oj.chenryz.workers.dev",
 
     "assets": "https://raw.githubusercontent.com/LibreOJ/assets/master",
     "favicon": "${assets}/favicon.ico",
