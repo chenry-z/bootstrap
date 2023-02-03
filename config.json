@@ -1,9 +1,9 @@
 {
   "env": {
-    "title": "LibreOJ",
+    "title": "GYOJ",
     "uiVersion": null,
 
-    "cdnRoot": "https://cdn.jsdelivr.net/npm/@lyrio/ui@0.5.8/dist",
+    "cdnRoot": "https://cdn.jsdelivr.net/npm/@lyrio/ui@${uiVersion}/dist",
 
     "apiEndpoint": "https://api.chenryz.top:8443",
     "apiEndpointCN": "https://api.chenryz.top:8443",
