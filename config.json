@@ -9,7 +9,6 @@
     "apiEndpointCN": "https://api.chenryz.top:8443",
 
     "bootstrapCdnRoot": "oj.chenryz.workers.dev",
-    "bootstrapCdnRootStaging": "st-oj.chenryz.workers.dev",
 
     "assets": "https://raw.githubusercontent.com/LibreOJ/assets/master",
     "favicon": "${assets}/favicon.ico",
@@ -53,9 +52,6 @@
     },
     "__bootstrap_cdn_root__": {
       "": "${bootstrapCdnRoot}"
-    },
-    "__bootstrap_cdn_root_staging__": {
-      "": "${bootstrapCdnRootStaging}"
     }
   }
 }
