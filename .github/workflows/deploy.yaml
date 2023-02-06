@@ -8,35 +8,11 @@ env:
   CLOUDFLARE_SUBDIRECTORY: cloudflare
   CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
   CLOUDFLARE_WORKER_NAME_PRODUCTION: oj
-  CLOUDFLARE_WORKER_NAME_STAGING: st-oj
 
 jobs:
-  cf-staging:
-    name: Cloudflare Workers (Staging)
-    runs-on: ubuntu-latest
-    steps:
-    - name: Check out
-      uses: actions/checkout@v2
-    - name: Install Node.js 16
-      uses: actions/setup-node@v2
-      with:
-        node-version: 16
-    - name: Install dependencies
-      run: yarn --frozen-lockfile
-    - name: Build for deployment
-      working-directory: ${{ env.CLOUDFLARE_SUBDIRECTORY }}
-      run: yarn pre-deploy
-      env:
-        CLOUDFLARE_WORKER_NAME: ${{ env.CLOUDFLARE_WORKER_NAME_STAGING }}
-    - name: Deploy with Wrangler
-      uses: cloudflare/wrangler-action@1.2.0
-      with:
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        workingDirectory: ${{ env.CLOUDFLARE_SUBDIRECTORY }}
   cf-production:
     name: Cloudflare Workers (Production)
     environment: production
-    needs: cf-staging
     runs-on: ubuntu-latest
     steps:
     - name: Check out
